@@ -113,9 +113,9 @@ function contadorCarritoAumenta(){
     contadorCarrito.textContent = count;
 }
 
-function contadorCarritoDisminuye(){
+function contadorCarritoDisminuye(cantidad){
     let contadorCarrito = document.querySelector('#carrito-contador');
-    let count = parseInt(contadorCarrito.textContent)-1;
+    let count = parseInt(contadorCarrito.textContent)-cantidad;
     contadorCarrito.textContent = count;
 }
 
@@ -143,13 +143,12 @@ function eliminarProducto(event){
     
     if(event.target.classList.contains('eliminarProducto')){
         const productoID = event.target.getAttribute('data-id');
-        
+        let cantidad = itemsCarrito[itemsCarrito.length-1].cantidad;
+        console.log(cantidad);
         itemsCarrito = itemsCarrito.filter( producto => producto.id !== productoID);
         
-        console.log(itemsCarrito[0].cantidad);
-
         insertarProducto();
-        contadorCarritoDisminuye();
+        contadorCarritoDisminuye(cantidad);
         guardarStorage();
     }
 }
