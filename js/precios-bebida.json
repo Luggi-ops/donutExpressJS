@@ -1,0 +1,39 @@
+
+[
+    {
+        "nombre": "Expresso",
+        "chico": "$60",
+        "grande": "$70"
+    },
+
+    {
+        "nombre": "Licuado",
+        "chico": "$80",
+        "grande": "$90"
+    },
+
+    {
+        "nombre": "Cappuccino",
+        "chico": "$70",
+        "grande": "$75"
+    },
+
+    {
+        "nombre": "Latte",
+        "chico": "$60",
+        "grande": "$70"
+    },
+
+    {
+        "nombre": "Cortado",
+        "chico": "$60",
+        "grande": "$70"
+    },
+
+    {
+        "nombre": "Submarino",
+        "chico": "$75",
+        "grande": "$85"
+    }
+ 
+]

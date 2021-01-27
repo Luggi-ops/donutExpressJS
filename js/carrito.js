@@ -2,7 +2,7 @@ const carrito = document.querySelector('#carrito');
 const contenedorCarrito = document.querySelector('#carrito-productos');
 const listaProductos = document.querySelector('#lista-productos');
 let itemsCarrito = [];
-let countCarrito = 0;
+let contadorCarrito = document.querySelector('#carrito-contador')
 
 
 listaProductos.addEventListener('click', agregarACarrito);
@@ -16,7 +16,7 @@ function agregarACarrito(event){
         const itemProducto = event.target.closest('.slider-card');
         
         obetenerDatosProducto(itemProducto);
-        contadorCarritoAumenta()
+        contadorCarritoAumenta();
     }
 }
 
@@ -143,9 +143,10 @@ function eliminarProducto(event){
     
     if(event.target.classList.contains('eliminarProducto')){
         const productoID = event.target.getAttribute('data-id');
-        console.log(productoID);
         
         itemsCarrito = itemsCarrito.filter( producto => producto.id !== productoID);
+        
+        console.log(itemsCarrito[0].cantidad);
 
         insertarProducto();
         contadorCarritoDisminuye();
@@ -171,6 +172,7 @@ function vaciarCarrito(event){
 //Guardar en el LS
 function guardarStorage(){
     localStorage.setItem('carrito', JSON.stringify(itemsCarrito));
+    localStorage.setItem('carrito', JSON.stringify(itemsCarrito))
 }
 
 //No perder el carrito ante un refresh del document
@@ -178,3 +180,5 @@ document.addEventListener('DOMContentLoaded', () => {
     itemsCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
     insertarProducto();
 })
+
+//modal de compra

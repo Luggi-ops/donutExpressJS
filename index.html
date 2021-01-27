@@ -159,14 +159,21 @@
                     </div>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
+                            
                             <table class="carta__table">
-                                <tr>
-                                    <th>Bebida</th>
-                                    <th>Chico</th>
-                                    <th>Grande</th>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th>Bebida</th>
+                                        <th>Chico</th>
+                                        <th>Grande</th>
+                                    </tr>
+                                </thead>
 
-                                <tr>
+                                <tbody id="request1">
+
+
+                                </tbody>
+                                <!-- <tr>
                                     <td>Expresso</td>
                                     <td>$60</td>
                                     <td>$70</td>
@@ -200,18 +207,25 @@
                                     <td>Submarino</td>
                                     <td>$75</td>
                                     <td>$85</td>
-                                </tr>
+                                </tr> -->
                             </table>
                         </div>
                         <div class="carousel-item">
+                            
                             <table class="carta__table">
 
-                                <tr>
-                                    <th>Dona</th>
-                                    <th>Precio</th>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th>Dona</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                
 
-                                <tr>
+                                <tbody id="request2">
+
+                                </tbody>
+                                <!-- <tr>
                                     <td>Donutella</td>
                                     <td>$110</td>
                                 </tr>
@@ -249,7 +263,7 @@
                                 <tr>
                                     <td>Donuts m&m</td>
                                     <td>$110</td>
-                                </tr>
+                                </tr> -->
                             </table>
                         </div>
                     </div>
@@ -267,6 +281,7 @@
 
     <!-- Sección para hacer el pedido, modo de entrega y pago -->
     <main id="pedido">
+
         <h2 class="slider-heading">Hacé tu pedido</h2>
 
         <!-- Elegir el pedido -->
@@ -1155,6 +1170,7 @@
     <!-- Mis JS -->
     <script src="js/carrito.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/ajax.js"></script>
 
 </body>
 

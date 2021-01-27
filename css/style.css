@@ -1,3 +1,5 @@
+
+
 @charset "UTF-8";
 h1,
 h2,
@@ -514,14 +516,15 @@ h4 {
           border-collapse: collapse;
           text-align: center;
           width: 30rem;
-          display: flex;
           justify-content: center; }
           .carta .carta__content .carta__table-container .carousel .carousel-inner .carousel-item .carta__table tr {
             display: block;
-            margin: 1.5rem; }
-            .carta .carta__content .carta__table-container .carousel .carousel-inner .carousel-item .carta__table tr td, .carta .carta__content .carta__table-container .carousel .carousel-inner .carousel-item .carta__table tr th {
+            margin: 1.5rem; 
+            display: flex;
+            justify-content: space-around;}
+            .carta .carta__content .carta__table-container .carousel .carousel-inner .carousel-item .carta__table tbody tr td, .carta .carta__content .carta__table-container .carousel .carousel-inner .carousel-item .carta__table thead tr th {
               overflow-wrap: break-word;
-              width: 10rem; }
+              width: 10rem;}
 
 #pedido {
   background-color: #f2728e;
