@@ -538,7 +538,7 @@ h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 5rem;
     height: 100vh;
     min-height: 80rem; }
